@@ -1,0 +1,42 @@
+.redside{
+  background-color: red;
+  height: 100px;
+  width: 100%;
+  float: left;
+}
+.greenside{
+  background-color: green;
+  height: 100px;
+  width: 33.3%;
+  float: left;
+}
+.skyside{
+  background-color: rgb(113, 221, 243);
+  height: 100px;
+  width: 33.3%;
+  float: left;
+}
+.box{
+  height: 100px;
+  width: 33.3%;
+  float: left;
+  background-color: blue;
+  
+}
+.box .blue{
+  background-color: yellow;
+  height: 50px;
+}
+.orange{
+  background-color: orange;
+  height: 100px;
+  width: 100%;
+  float: left;
+}
+.pink{
+  background-color: rgb(234, 10, 152);
+  height: 100px;
+  width: 100%;
+  float: left;
+  
+}

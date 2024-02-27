@@ -1,0 +1,74 @@
+.wrapper {
+    height: 1200px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.menu {
+    height: 50px;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+
+}
+
+.menu ul li {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.Gallery {
+    height: 600px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.Gallery .one {
+    height: 200px;
+    width: 50%;
+    background-color: burlywood;
+    transition: all 2s;
+    transform: scale(1);
+    background-image: url(./Image/1.jpg);
+    background-size: cover;
+    float: left;
+}
+
+.Gallery .one:hover {
+    transform: scale(1.5);
+}
+
+.Gallery .two {
+    height: 200px;
+    width: 50%;
+    background-color: burlywood;
+    transition: all 2s;
+    transform: rotate(0deg);
+    background-image: url(./Image/2.jpg);
+    background-size: cover;
+    float: left;
+}
+
+.Gallery .two:hover {
+    transform: rotate(180deg);
+}
+
+.Gallery .three {
+    height: 200px;
+    width: 50%;
+    background-color: burlywood;
+    transition: all 2s;
+    transform: skewX(0deg);
+    background-image: url(./Image/3.jpg);
+    background-size: cover;
+    float: left;
+}
+
+.Gallery .three:hover {
+    transform: skewX(300deg);
+
+}
