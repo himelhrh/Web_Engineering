@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+ 
+<body> 
+    <form action="index.php" method="POST"> 
+        User Name: <input type="text" name="user_name"> 
+        User Email: <input type="email" name="user_email"> 
+        <input type="submit" value="Save"> 
+    </form> 
+
+    <form action="index.php" method="POST"> 
+        <input type="hidden" name="action" value="search">
+        Search by Email: <input type="email" name="search_email"> 
+        <input type="submit" value="Search"> 
+    </form>
+
+    <form action="index.php" method="POST"> 
+        <input type="hidden" name="action" value="delete">
+        Delete by Email: <input type="email" name="delete_email"> 
+        <input type="submit" value="Delete"> 
+    </form>
+
+    <form action="index.php" method="POST"> 
+        <input type="hidden" name="action" value="update">
+        Update User Name: <input type="text" name="new_user_name"> 
+        Update User Email: <input type="email" name="new_user_email"> 
+        Old User Email: <input type="email" name="old_user_email"> 
+        <input type="submit" value="Update"> 
+    </form>
+
+</body> 
+</html>
