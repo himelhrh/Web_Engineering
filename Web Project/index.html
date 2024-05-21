@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Meal Planner</title>
+  
+  </head>
+  <body>
+    <header id="recipeHeader">
+      <strong>MEAL PLANNER AND GROCERY LIST GENERATOR<br /></strong>
+      SAVOR THE FLAVOR!
+    </header>
+    <img
+      src="https://tse2.mm.bing.net/th?id=OIP.ETld7IsiLAQ1OyxKs4S7-gHaE7&pid=Api&P=0&h=220"
+      height="100"
+      ,
+      width="100"
+    />
+    <div class="container login-container" id="loginContainer">
+      <div class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+
+        <button onclick="login()">Login</button>
+      </div>
+      <p>
+        Don't have an account?
+        <a href="#" onclick="showRegister()">Register here</a>
+      </p>
+    </div>
+
+    <div
+      class="container login-container"
+      id="registerContainer"
+      style="display: none"
+    >
+      <div class="login-form">
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" required />
+
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" required />
+
+        <button onclick="register()">Register</button>
+      </div>
+      <p>
+        Already have an account?
+        <a href="#" onclick="showLogin()">Login here</a>
+      </p>
+    </div>
+
+    <div class="container" id="recipeContainer" style="display: none">
+      <div class="recipe-section">
+        <label for="recipe">Select Recipe:</label>
+        <select id="recipe">
+          <option value="spaghetti">Spaghetti Bolognese</option>
+          <option value="chicken">Grilled Chicken Salad</option>
+          <option value="lasagna">Vegetarian Lasagna</option>
+          <option value="stirFry">Chicken Stir Fry</option>
+          <option value="tacos">Beef Tacos</option>
+          <option value="salmon">Baked Salmon</option>
+          <option value="pasta">Pasta Primavera</option>
+          <option value="soup">Minestrone Soup</option>
+          <option value="pizza">Margherita Pizza</option>
+          <option value="curry">Vegetable Curry</option>
+          <option value="burgers">Turkey Burgers</option>
+          <option value="rice">Teriyaki Chicken and Rice</option>
+          <option value="quiche">Spinach and Feta Quiche</option>
+          <option value="shrimp">Garlic Shrimp Scampi</option>
+          <option value="risotto">Mushroom Risotto</option>
+          <option value="chili">Vegetarian Chili</option>
+          <option value="wraps">Chicken Caesar Wraps</option>
+          <option value="pancakes">Blueberry Pancakes</option>
+          <option value="smoothie">Mixed Berry Smoothie</option>
+          <option value="meatballs">Swedish Meatballs</option>
+        </select>
+
+        <label for="servings">Number of Servings:</label>
+        <input type="number" id="servings" min="1" value="1" />
+
+        <button onclick="generateList()">Generate Grocery List</button>
+      </div>
+
+      <div class="recipe-section">
+        <h2>Grocery List:</h2>
+        <ul id="groceryList"></ul>
+      </div>
+    </div>
+
+    <footer id="recipeFooter">&copy; 2024 Himel Kashfea Bristy</footer>
+    <img
+      src="https://tse2.mm.bing.net/th?id=OIP.cZOmKMRYZoDoHB34nnhF6gHaE7&pid=Api&P=0&h=220 "
+      height="100"
+      ,
+      width="100"
+    />
+    <script src="script.js"></script>
+  </body>
+</html>
